@@ -3,10 +3,14 @@
 
 <head>
 
-<title>Divall Simmons Antiques</title>
+<title>Divall Simmons Antiques | Vintage | Retro | Collectables</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Divall Simmons antiques, vintage, retro gifts and collectables">
+<meta name="description" content="Divall Simmons antiques, vintage, retro gifts and collectables based in Wrexham, UK.">
+
+<meta property="og:title" content="Divall Simmons Antiques">
+<meta property="og:description" content="Antiques • Vintage • Retro • Gifts & Collectables">
+<meta property="og:type" content="website">
 
 <style>
 
@@ -22,7 +26,7 @@ margin:0;
 text-align:center;
 }
 
-/* NAVIGATION */
+/* NAV */
 
 nav{
 background:black;
@@ -38,7 +42,6 @@ color:#d4af37;
 margin:0 20px;
 text-decoration:none;
 font-weight:bold;
-font-size:16px;
 }
 
 nav a:hover{
@@ -59,7 +62,6 @@ max-width:360px;
 color:#d4af37;
 font-size:28px;
 margin-top:20px;
-letter-spacing:1px;
 }
 
 /* SECTIONS */
@@ -70,16 +72,14 @@ padding:60px 20px;
 
 h2{
 color:#d4af37;
-margin-bottom:25px;
 }
 
-/* OFFER IMAGE */
+/* OFFER */
 
 .offer img{
 max-width:500px;
 width:90%;
 border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.7);
 }
 
 /* GALLERY */
@@ -94,11 +94,31 @@ padding:40px;
 .gallery img{
 width:100%;
 border-radius:10px;
+cursor:pointer;
 transition:transform .3s ease;
 }
 
 .gallery img:hover{
 transform:scale(1.05);
+}
+
+/* ZOOM MODAL */
+
+.modal{
+display:none;
+position:fixed;
+z-index:2000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+}
+
+.modal img{
+max-width:90%;
+max-height:90%;
+margin-top:5%;
 }
 
 /* CONTACT */
@@ -132,7 +152,7 @@ button:hover{
 background:#b9972f;
 }
 
-/* SOCIAL LINKS */
+/* SOCIAL */
 
 .social{
 margin-top:40px;
@@ -142,13 +162,6 @@ margin-top:40px;
 color:#d4af37;
 margin:0 15px;
 text-decoration:none;
-font-size:18px;
-}
-
-/* MAP */
-
-.map{
-margin-top:40px;
 }
 
 /* FOOTER */
@@ -179,7 +192,7 @@ border-top:1px solid #333;
 
 <header id="home">
 
-<img src="divall-simmons-logo.jpg" class="logo">
+<img src="divall-simmons-logo.jpg" class="logo" loading="lazy">
 
 <div class="tagline">
 Antiques • Vintage • Retro • Gifts & Collectables
@@ -191,19 +204,25 @@ Antiques • Vintage • Retro • Gifts & Collectables
 
 <h2>Offer of the Week</h2>
 
-<img src="offer.jpg">
+<img src="offer.jpg" loading="lazy">
 
 </div>
 
 <div class="gallery" id="gallery">
 
-<img src="gallery1.jpg">
-<img src="gallery2.jpg">
-<img src="gallery3.jpg">
-<img src="gallery4.jpg">
-<img src="gallery5.jpg">
-<img src="gallery6.jpg">
+<img src="gallery1.jpg" loading="lazy" onclick="openModal(this)">
+<img src="gallery2.jpg" loading="lazy" onclick="openModal(this)">
+<img src="gallery3.jpg" loading="lazy" onclick="openModal(this)">
+<img src="gallery4.jpg" loading="lazy" onclick="openModal(this)">
+<img src="gallery5.jpg" loading="lazy" onclick="openModal(this)">
+<img src="gallery6.jpg" loading="lazy" onclick="openModal(this)">
 
+</div>
+
+<!-- ZOOM WINDOW -->
+
+<div id="imgModal" class="modal" onclick="closeModal()">
+<img id="modalImg">
 </div>
 
 <div class="section contact" id="contact">
@@ -215,7 +234,6 @@ Antiques • Vintage • Retro • Gifts & Collectables
 <form action="https://formspree.io/f/mnqedzvp" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
-
 <input type="email" name="email" placeholder="Your Email" required>
 
 <textarea name="message" placeholder="Message" required></textarea>
@@ -257,5 +275,15 @@ src="https://www.google.com/maps?q=LL14+1RE&output=embed">
 
 </footer>
 
-</body>
-</html>
+<script>
+
+function openModal(img){
+document.getElementById("imgModal").style.display="block";
+document.getElementById("modalImg").src=img.src;
+}
+
+function closeModal(){
+document.getElementById("imgModal").style.display="none";
+}
+
+</script>
