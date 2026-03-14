@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divall-Simmons Website</title>
+<meta charset="UTF-8">
+<title>Divall-Simmons Antiques</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#111;
+color:#fff;
+margin:0;
+text-align:center;
+}
+
+header{
+padding:30px;
+background:#000;
+}
+
+.logo{
+max-width:450px;
+}
+
+h1{
+color:#e6c15a;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.gallery img{
+width:100%;
+border-radius:6px;
+}
+
+.contact{
+background:#000;
+padding:40px;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:grid;
+gap:10px;
+}
+
+input,textarea{
+padding:10px;
+border:none;
+border-radius:4px;
+}
+
+button{
+padding:12px;
+background:#e6c15a;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+footer{
+padding:20px;
+background:#000;
+color:#aaa;
+}
+
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome to Divall-Simmons Website!</h1>
+
+<header>
+
+<img src="divall-simmons-logo.jpg" class="logo">
+
+<h1>Antiques • Vintage • Retro • Gifts & Collectables</h1>
+
+</header>
+
+<section>
+
+<h2>Offer of the Week</h2>
+
+<img src="offer.jpg" style="max-width:500px">
+
+</section>
+
+<section class="gallery">
+
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
+<img src="gallery5.jpg">
+<img src="gallery6.jpg">
+
+</section>
+
+<section class="contact">
+
+<h2>Contact for Postage Quote</h2>
+
+<p>Free postage on items under 1KG.  
+For items over 1KG please request a quote.</p>
+
+<form action="https://formsubmit.co/t23pds@aol.com" method="POST">
+
+<input placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input placeholder="Item Reference">
+
+<input placeholder="Postcode">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Send Enquiry</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>Rhosllannerchrugog, Wrexham</p>
+
+<p>Phone: 07970710344</p>
+
+<p>Email: t23pds@aol.com</p>
+
+</footer>
+
 </body>
 </html>
