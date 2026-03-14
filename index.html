@@ -1,79 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Divall-Simmons Antiques</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divall Simmons</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Divall Simmons antiques, vintage, retro gifts and collectables">
 
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
-background:#111;
-color:#fff;
-margin:0;
+background:black;
+color:white;
+font-family:Arial;
 text-align:center;
+margin:0;
 }
 
 header{
-padding:30px;
-background:#000;
+padding:40px;
 }
 
 .logo{
-max-width:450px;
+max-width:350px;
 }
 
-h1{
-color:#e6c15a;
+.tagline{
+color:#e3b341;
+font-size:28px;
+margin-top:20px;
+}
+
+.section{
+padding:50px 20px;
+}
+
+.offer img{
+max-width:500px;
+width:90%;
+border-radius:8px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 padding:40px;
 }
 
 .gallery img{
 width:100%;
-border-radius:6px;
-}
-
-.contact{
-background:#000;
-padding:40px;
+border-radius:8px;
 }
 
 form{
 max-width:500px;
 margin:auto;
-display:grid;
+display:flex;
+flex-direction:column;
 gap:10px;
 }
 
-input,textarea{
+input, textarea{
 padding:10px;
+border-radius:5px;
 border:none;
-border-radius:4px;
 }
 
 button{
 padding:12px;
-background:#e6c15a;
+background:#e3b341;
 border:none;
-cursor:pointer;
 font-weight:bold;
+cursor:pointer;
 }
 
-footer{
-padding:20px;
-background:#000;
-color:#aaa;
+button:hover{
+background:#c99b2e;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -82,19 +87,21 @@ color:#aaa;
 
 <img src="divall-simmons-logo.jpg" class="logo">
 
-<h1>Antiques • Vintage • Retro • Gifts & Collectables</h1>
+<div class="tagline">
+Antiques • Vintage • Retro • Gifts & Collectables
+</div>
 
 </header>
 
-<section>
+<div class="section offer">
 
 <h2>Offer of the Week</h2>
 
-<img src="offer.jpg"> style="max-width:500px">
+<img src="offer.jpg">
 
-</section>
+</div>
 
-<section class="gallery">
+<div class="gallery">
 
 <img src="gallery1.jpg">
 <img src="gallery2.jpg">
@@ -103,42 +110,27 @@ color:#aaa;
 <img src="gallery5.jpg">
 <img src="gallery6.jpg">
 
-</section>
+</div>
 
-<section class="contact">
+<div class="section">
 
-<h2>Contact for Postage Quote</h2>
+<h2>Contact Us</h2>
 
-<p>Free postage on items under 1KG.  
-For items over 1KG please request a quote.</p>
+<p>Drop us a line!</p>
 
-<form action="https://formsubmit.co/t23pds@aol.com" method="POST">
+<form action="https://formspree.io/f/mnqedzvp" method="POST">
 
-<input placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Your Email" required>
 
-<input placeholder="Item Reference">
+<textarea name="message" placeholder="Message" required></textarea>
 
-<input placeholder="Postcode">
-
-<textarea placeholder="Message"></textarea>
-
-<button>Send Enquiry</button>
+<button type="submit">Send Enquiry</button>
 
 </form>
 
-</section>
-
-<footer>
-
-<p>Rhosllannerchrugog, Wrexham</p>
-
-<p>Phone: 07970710344</p>
-
-<p>Email: t23pds@aol.com</p>
-
-</footer>
+</div>
 
 </body>
 </html>
