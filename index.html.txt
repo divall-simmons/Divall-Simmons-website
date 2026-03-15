@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Divall Simmons Antiques</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+text-align:center;
+background-image:url("wood.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+nav{
+background:black;
+padding:15px;
+border-bottom:2px solid #d4af37;
+}
+
+nav a{
+color:#d4af37;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-shadow:0 0 10px #d4af37;
+}
+
+.logo{
+margin-top:30px;
+}
+
+.logo img{
+max-width:400px;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
+
+.category img{
+width:100%;
+border-radius:8px;
+box-shadow:0 0 20px rgba(0,0,0,.7);
+transition:.3s;
+}
+
+.category img:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #d4af37;
+}
+
+.section{
+padding:60px 20px;
+}
+
+h2{
+color:#d4af37;
+}
+
+.contact{
+max-width:600px;
+margin:auto;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:5px;
+}
+
+.contact button{
+margin-top:15px;
+padding:12px 25px;
+background:#d4af37;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+margin-top:40px;
+padding:30px;
+color:#aaa;
+border-top:1px solid #333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="#contact">Contact</a>
+<a href="#map">Find Us</a>
+
+</nav>
+
+<div class="logo">
+
+<img src="divall-simmons-logo.jpg">
+
+<h2>Antiques • Vintage • Retro • Gifts & Collectables</h2>
+
+</div>
+
+<div class="categories">
+
+<a href="jewellery.html" class="category">
+<img src="gallery1.jpg">
+</a>
+
+<a href="watches.html" class="category">
+<img src="gallery2.jpg">
+</a>
+
+<a href="ornamental.html" class="category">
+<img src="gallery3.jpg">
+</a>
+
+<a href="furniture.html" class="category">
+<img src="gallery4.jpg">
+</a>
+
+<a href="brass.html" class="category">
+<img src="gallery5.jpg">
+</a>
+
+<a href="art.html" class="category">
+<img src="gallery6.jpg">
+</a>
+
+</div>
+
+<div class="section" id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact">
+
+<form action="https://formsubmit.co/info@divall-simmons.co.uk" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="section" id="map">
+
+<h2>Find Us</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=LL14%201RE&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%"
+height="350"
+style="border:0;">
+</iframe>
+
+</div>
+
+<footer>
+
+© Divall Simmons Antiques
+
+</footer>
+
+</body>
+</html>
