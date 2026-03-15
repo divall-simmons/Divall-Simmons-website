@@ -102,7 +102,7 @@ border-top:1px solid #333;
 
 </nav>
 
-<h1>Gallery</h1>
+<h1>Art Collection</h1>
 
 <div class="gallery">
 
