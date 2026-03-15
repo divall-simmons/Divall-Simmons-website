@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Art | Divall Simmons Antiques</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+text-align:center;
+
+background-image:url("wood.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+nav{
+background:black;
+padding:15px;
+border-bottom:2px solid #d4af37;
+}
+
+nav a{
+color:#d4af37;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-shadow:0 0 10px #d4af37;
+}
+
+h1{
+color:#d4af37;
+margin-top:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
+
+.product{
+background:#111;
+padding:15px;
+border-radius:8px;
+box-shadow:0 0 20px rgba(0,0,0,.7);
+}
+
+.product img{
+width:100%;
+border-radius:6px;
+transition:0.3s;
+}
+
+.product img:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #d4af37;
+}
+
+.price{
+color:#d4af37;
+font-size:20px;
+margin-top:10px;
+}
+
+.details{
+font-size:14px;
+line-height:1.6;
+margin-top:10px;
+}
+
+footer{
+margin-top:40px;
+padding:30px;
+color:#aaa;
+border-top:1px solid #333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+</nav>
+
+<h1>Gallery</h1>
+
+<div class="gallery">
+
+<div class="product">
+
+<img src="gallery1.jpg">
+
+<div class="price">£45</div>
+
+<div class="details">
+
+Example Item
+
+<br><br>
+
+<b>Condition:</b> Excellent
+<br>
+<b>Approx Age:</b> 1970s
+<br>
+<b>Size:</b> 10cm
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© Divall Simmons Antiques
+
+</footer>
+
+</body>
+</html>
