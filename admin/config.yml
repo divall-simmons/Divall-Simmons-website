@@ -3,9 +3,9 @@ backend:
   repo: divall-simmons/Divall-Simmons-website
   branch: main
   auth_type: implicit
-  base_url: https://api.github.com
 
-local_backend: true
+site_url: https://www.divall-simmons.co.uk
+display_url: https://www.divall-simmons.co.uk
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
