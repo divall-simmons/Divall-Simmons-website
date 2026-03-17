@@ -1,11 +1,6 @@
 backend:
-  name: github
-  repo: divall-simmons/Divall-Simmons-website
+  name: git-gateway
   branch: main
-  auth_type: implicit
-
-site_url: https://www.divall-simmons.co.uk
-display_url: https://www.divall-simmons.co.uk
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
